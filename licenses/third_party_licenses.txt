@@ -1,0 +1,427 @@
+    Halcon
+==============
+ 
+The use of halcon_bridge requires a licence to the HALCON library. Please refer to the HALCON End User Legal Agreement (EULA) for details:
+ 
+ 
+MVTec Software GmbH - Software License Agreement for HALCON
+
+IMPORTANT - READ CAREFULLY: This Software License Agreement
+(Agreement) is a legal Agreement between you (either an individual or
+a single entity) and MVTec Software GmbH (MVTec) for the MVTec
+software product identified above, which includes computer software
+and may include associated media, printed materials and online or
+electronic documentation.  YOU AGREE TO BE BOUND BY THE TERMS OF THIS
+AGREEMENT BY INSTALLING, COPYING, OR OTHERWISE USING THE PRODUCT.  IF
+YOU DO NOT AGREE, DO NOT INSTALL OR USE THE PRODUCT.  YOU MAY RECEIVE
+A REFUND OF THE AMOUNT YOU ORIGINALLY PAID IF YOU (1) DO NOT USE THE
+SOFTWARE AND (2) RETURN IT, WITH PROOF OF PAYMENT, TO THE LOCATION
+FROM WHICH IT WAS OBTAINED WITHIN THIRTY (30) DAYS OF THE PURCHASE
+DATE.
+
+
+MVTec grants you the rights described in this Agreement provided that
+you comply with all terms and conditions of this Agreement.
+
+
+1. DEFINITIONS
+
+Software means all of the contents of the files, disk(s), CD-ROM(s),
+DVD(s) or other media with which this Agreement is provided, including
+but not limited to, MVTec or third party computer software, digital
+images, example programs and Documentation; this also includes
+upgrades, modified versions, updates, additions and copies of the
+Software, if any, licensed to you by MVTec.
+
+Documentation means the User's Guides, User's Manuals and Reference
+Manuals, if any, accompanying delivery of the Software.  Documentation
+may be delivered in printed and/or electronic and/or online forms.
+
+Derivative means a computer software (Application) created by you that
+includes or is based in whole or in part on the Software, including,
+but not limited to, incorporating the Software into the Application by
+linking or otherwise using the Software in any form whatsoever in your
+Application.
+
+Software Configuration means the Demo Version, the Evaluation Version,
+the Development Version, or the Runtime Version of the Software.
+
+License Type means a Floating License or a Nodelocked License.
+
+License File means a computer file that contains license keys that
+permit you to use the Software in a particular Software Configuration.
+
+Floating License means a license, supplied to you in the form of a
+License File, that allows you to install the Software on any number of
+computers in your local network.  A Floating License limits the number
+of simultaneous uses of the Software to the number of licenses
+specified in the Floating License File.
+
+Nodelocked License means a license, supplied to you in the form of a
+License File, that allows you to install and use the Software only on
+the computer specified in the Nodelocked License File.
+
+Evaluation License means a license, supplied to you in the form of a
+license file, that allows you to install and evaluate the Software on
+any computer for a certain period of time.
+
+
+2. LICENSE GRANT
+
+MVTec grants to you a nonexclusive license to install and use the
+Software as provided herein.  The licensed Software and Documentation
+shall at all time remain the property of MVTec and/or its licensors,
+and you, as licensee, shall have no right, title, or interest in the
+Software, except as expressly set forth in this Agreement.
+
+2.1. SOFTWARE CONFIGURATIONS AND LICENSE OPTIONS
+
+Different rights, obligations and restrictions apply with each
+Software Configuration and License Type.  Your right to install and
+use the Software is determined by the Software Configuration selected
+and the associated License Type as set forth below:
+
+2.1.1. DEMO VERSION
+
+The Demo Version is a version of the Software that contains certain
+limitations in functionality, as described in the Documentation.  It
+does not require a License File.  You may use the Demo Version for
+evaluation purposes only.  The Software may be installed on any number
+of computers.  The right to use the Demo Version contains no time
+limitation.  Except as aforesaid, you may not use the Software for any
+other purposes, including, but not limited to, commercial purposes.
+You acknowledge that the Demo Version contains limited functionality.
+
+2.1.2. EVALUATION VERSION
+
+The Evaluation Version is a version of the Software that allows you to
+evaluate the full functionality of the Software for a certain period
+of time, typically one month.  It requires an Evaluation License File.
+The Software may be installed on any number of computers.  Your right
+to use the Software and to create Derivatives is restricted to the
+purpose of evaluating the Software.  Except as aforesaid, you may not
+use the Software for any other purposes, including, but not limited
+to, commercial purposes.  In particular, you may not use the
+Evaluation Version to develop commercial applications.  The Evaluation
+Version may be used only in the time period that is specified in the
+Evaluation License File.  After expiration of this time period, the
+Software may no longer be used.  The transfer of the Software,
+including, but not limited to, sublicensing and distribution to a
+third party is not permitted.
+
+2.1.3. DEVELOPMENT VERSION
+
+The Development Version is a version of the Software that allows you
+to use the full functionality of the Software for an unlimited period
+of time.  The Development Version requires a Development License File.
+Depending on the License Type you have selected, the Software may only
+be installed on the computer that is specified in the License File
+(Nodelocked License) or on any computer in the local network (Floating
+License); see Section 2.2.  You may use the Software to create
+Derivatives, including commercial applications.  In particular, you
+may use the Development Version to compile and link applications.  You
+may not sublicense and/or distribute the Development Version to a
+third party.
+
+2.1.4. RUNTIME VERSION
+
+The Runtime Version is a version of the Software that only allows you
+to use the runtime functionality of the Software.  In particular,
+certain development tools of the Software cannot be used, as described
+in the Documentation.  The Runtime Version requires a Runtime License
+File.  The Software may only be installed on the computer that is
+specified in the License File; the Runtime Version is only available
+with Nodelocked Licenses.  You may distribute and sublicense
+Derivatives.  You must possess a valid license for the Development
+Version before you are authorized to distribute and/or sublicense your
+Derivatives.  The Runtime Version may not be used for the creation of
+Derivatives, including, but not limited to, compiling and linking of
+applications.  If you are authorized and choose to distribute such
+Derivatives, you agree (1) not to use MVTec's name, logo or trademarks
+to market the Derivatives; (2) to display your own valid copyright
+notice which shall be sufficient to protect MVTec's copyright in the
+Software; (3) not to remove or obscure any copyright, trademark or
+patent notice that appear on the Software as delivered to you; (4) to
+accompany the Derivative with a license whose terms and conditions are
+at least as restrictive as the terms in this Agreement; (5) to
+explicitly exclude MVTec and its suppliers from all liability for
+damages or any obligation to provide remedial actions that may result
+from the use and distribution of Derivatives; (6) to indemnify, hold
+harmless and defend MVTec from and against any claims or lawsuits,
+including attorney's fees, that arise or result from the use or
+distribution of the Derivatives; (7) otherwise comply with the terms
+of this Agreement; and (8) agree that MVTec reserves all rights not
+expressly granted.  MVTec shall have no support or warranty
+obligations, and disclaims all liability, for Derivatives developed
+and/or distributed by you.  In particular, you will be solely
+responsible to your end users (or anyone else who uses your
+Derivatives) for support, service, upgrades, or technical or other
+assistance, and such persons will have no right to contact MVTec for
+any services or assistance.
+
+2.2. LICENSE TYPES
+
+2.2.1. NODELOCKED LICENSES
+
+A Nodelocked License allows you to install and use the Software only
+on the computer specified in the Nodelocked License File.  The
+computer is specified by a Host ID that is derived from a certain
+hardware component, which may be bound to an irremovable computer
+component (Irremovable Host ID), for example, a network card, or may
+be bound to a removable hardware component (Removable Host ID), for
+example, a dongle.  If you use an Irremovable Host ID for licensing
+the Software, you may only install and use the Software on the
+computer that includes the Irremovable Host ID.  If you use a
+Removable Host ID you may install the Software on any number of
+computers, but you may only use the Software on the computer to which
+the Removable Host ID is attached.
+
+2.2.2. FLOATING LICENSES
+ 
+A Floating License allows you to install the Software on any number of
+computers in your local network.  A Floating License limits the number
+of simultaneous uses of the Software to the number of licenses
+specified in the Floating License File.  The Floating License requires
+that a special program, the License Server, is installed on one
+computer in the network.  Like for Nodelocked Licenses, the License
+Server computer is identified either by an Irremovable Host ID or by a
+Removable Host ID.  If you use an Irremovable Host ID the License
+Server may only be executed on the computer identified by the
+Irremovable Host ID.  If you use a Removable Host ID the License
+Server may only be executed on the computer to which the Removable
+Host ID is attached.  You are obliged to stop the execution of the
+License Server before moving the Removable Host ID to a different
+computer.
+
+2.3. COMPLIANCE WITH LICENSES
+
+You agree that upon request from MVTec or MVTec's authorized
+representative, you will within thirty (30) days fully document and
+certify that use of any and all MVTec Software at the time of the
+request is in conformity with your valid licenses from MVTec.
+
+2.4. DOCUMENTATION
+
+You may make and use a reasonable number of copies of any
+Documentation, provided that such copies shall be used only for
+internal purposes and are not to be republished or distributed (either
+in hard copy or electronic form) beyond your premises.
+
+2.5. EXAMPLE PROGRAMS AND IMAGES
+
+MVTec grants you the right to use and modify the example programs and
+example images included in the Software for the sole purposes of
+designing, developing, and testing your software product(s).  Example
+programs are stored in the directory "examples" in the directory or
+directories in which you have installed the Software, while example
+images are stored in the directory "examples/images".
+
+
+3. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS
+
+3.1. RENTAL
+
+You may not rent, lease or lend the Software.
+
+3.2. SOFTWARE TRANSFER
+
+Except as may be expressly prohibited herein, you may transfer all
+your rights to use the Software to a third party provided that (1) you
+also transfer this Agreement, the Software and all other software
+bundled with the Software, including all copies, updates and prior
+versions, to such third party; (2) you retain no copies, including
+backups and copies stored on a computer; and (3) the receiving party
+accepts the terms and conditions upon which you legally purchased a
+license to the Software.
+
+3.3. BACKUP COPY
+
+You may make a reasonable number of copies of the Software to backup
+devices such as hard disks, optical media, or tape and a reasonable
+number of physical DVD media backup copies of the Software solely to
+replace the original copy provided to you if the original copy is
+damaged or destroyed.  All rights not specifically granted to you
+herein are retained by MVTec.
+
+3.4. LIMITATION ON REVERSE ENGINEERING, DECOMPILATION, DISASSEMBLY AND
+MODIFICATION
+
+You may not reverse engineer, decompile, disassemble or otherwise
+attempt to discover the source code of the Software, except to the
+extent you may be expressly permitted under applicable law, it is
+essential to do so in order to achieve interoperability of the
+Software with another software program, and you have first requested
+MVTec to provide the information necessary to achieve such
+interoperability and MVTec has not made such information available.
+MVTec has the right to impose reasonable conditions and to request a
+reasonable fee before providing such information.  Any information
+supplied by MVTec or obtained by you, as permitted hereunder, may only
+be used by you for the purpose described herein and may not be
+disclosed to any third party.
+
+You may not modify, adapt, or otherwise alter the Software except as
+expressly permitted herein.  In particular, you may not attempt to
+remove the license protection mechanism from the Software.
+
+3.5. TRADEMARKS
+
+This Agreement does not grant you any rights in connection with any
+trademarks or service marks of MVTec.  You may not use the name,
+trademarks, or service marks of MVTec in any advertising, promotional
+literature or any other material, whether in written, electronic, or
+other form, distributed to any third party, except as expressly
+permitted by MVTec.
+
+3.6. UPGRADES
+
+If the Software is an upgrade to a previous version of the Software,
+you must possess a valid license to such previous version in order to
+use the upgrade.  You may continue to use the previous version of the
+Software on your computer after you receive the upgrade to assist you
+in the transition to the upgrade, provided that (1) the previous
+version or copies thereof are not transferred to another party or
+computer unless all copies of the upgrade are also transferred to such
+party or computer; and (2) you acknowledge that any obligation MVTec
+may have to support the previous version of the Software may be ended
+within one (1) year upon availability of the upgrade.
+
+3.7. LICENSE FOR THIRD PARTY SOFTWARE
+
+MVTec has been granted licenses to distribute certain third party
+software.  As a condition of those licenses, MVTec is required to
+distribute the software subject to specific terms and conditions,
+which may be different from or additional to those contained herein
+for MVTec's Software.  You understand and agree that acceptance of
+this Agreement also confirms your acceptance of the applicable
+provisions for use, including the restrictions on use, of such third
+party software.  You may contact MVTec to obtain the current
+applicable provisions.  Any breach of the applicable provisions of any
+third party's license terms shall also be considered a material breach
+of this Agreement.
+
+3.8. TERMINATION
+
+Without prejudice to any other rights, MVTec may terminate this
+Agreement if you fail to comply with the terms and conditions of this
+Agreement.  In such event, you must destroy all copies of the Software
+and all of its components.
+
+
+4. INTELLECTUAL PROPERTY RIGHTS
+
+The Software is protected by copyright and other intellectual property
+laws and treaties.  All title and intellectual property rights in and
+to the Software, including, but not limited to, any digital images or
+example programs, incorporated into the Software, the Documentation
+and any copies of the Software are owned by MVTec or its suppliers.
+The Software is licensed, not sold.
+
+
+5. LIMITED WARRANTY
+
+MVTec warrants to the person or entity that first purchases a license
+for the Software that the Software will perform substantially in
+accordance with the Documentation for a period of six (6) months
+following receipt of the Software when used on a recommended hardware
+configuration.  Non-substantial variations of performance from the
+Documentation does not establish a warranty right.  This warranty does
+not apply to updates, pre-releases, or to Software that has been
+altered by you, to the extent such alterations caused a defect.  To
+make a warranty claim, you must return the Software to the location
+where you obtained it along with proof of purchase within such six (6)
+month period.  If the Software does not perform substantially in
+accordance with the Documentation, the entire liability of MVTec and
+your exclusive remedy shall be limited to either, at MVTec's option,
+the replacement of the Software or a refund of the license fee you
+paid for the Software.  The limited warranty is void if failure of the
+Software or hardware has resulted from accident, abuse or
+misapplication.  EXCEPT FOR THIS EXPRESS LIMITED WARRANTY, THE PRODUCT
+IS PROVIDED WITHOUT WARRANTY OF ANY KIND.  MVTEC HEREBY EXCLUDES AND
+DISCLAIMS ALL IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE.  THERE IS NO WARRANTY THAT THE SOFTWARE WILL BE
+ERROR-FREE OR WILL FUNCTION WITHOUT INTERRUPTION.  TO THE EXTENT THAT
+MVTEC MAY NOT DISCLAIM ANY WARRANTY AS A MATTER OF APPLICABLE LAW, THE
+SCOPE AND DURATION OF SUCH WARRANTY WILL BE THE MINIMUM PERMITTED
+UNDER SUCH LAW.
+
+SOME STATES/JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OF IMPLIED
+WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU.  THIS LIMITED
+WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS.  YOU MAY HAVE OTHER OR
+ADDITIONAL RIGHTS WHICH VARY FROM STATE/JURISDICTION TO
+STATE/JURISDICTION.
+
+
+6. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+MVTEC OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+PUNITIVE, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING,
+BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS OR CONFIDENTIAL OR
+OTHER INFORMATION OF ANY KIND, FOR BUSINESS INTERRUPTION, FOR PERSONAL
+INJURY AND FOR ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER) ARISING
+OUT OF OR IN ANY WAY RELATED TO THE USE OF OR INABILITY TO USE THE
+SOFTWARE, EVEN IF MVTEC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.  MVTEC'S TOTAL LIABILITY (WHETHER IN RELATION TO BREACH
+CONTRACT, NEGLIGENCE OR OTHERWISE) SHALL NOT EXCEED THE AMOUNT PAID BY
+YOU FOR THE SOFTWARE, IF ANY.  MVTec is acting on behalf of its
+suppliers for the purpose of disclaiming, excluding and/or limiting
+obligations, warranties and liability as provided in this Agreement,
+but in no other respects and for no other purpose.
+
+SOME STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE EXCLUSION OR
+LIMITATION MAY NOT APPLY TO YOU.
+
+
+7. SPECIFIC EXCEPTIONS FOR DEMO AND EVALUTION VERSIONS
+
+If the Software you have received with this Agreement is a Demo
+Version or an Evaluation Version, you acknowledge that the Software of
+the Demo Version contains limited functionality and/or functions and
+that the Evaluation Version is restricted to specific purposes and may
+not be used in any other way as permitted.  MVTEC IS LICENSING THE
+SOFTWARE ON AN "AS IS" BASIS.  MVTEC DISCLAIMS ANY WARRANTY OR
+LIABILITY OBLIGATIONS TO YOU OF ANY KIND.  WHERE LEGALLY LIABILITY
+CANNOT BE EXCLUDED FOR SUCH SOFTWARE, BUT IT MAY BE LIMITED, MVTEC'S
+LIABILITY SHALL BE LIMITED TO THE SUM OF FIFTY EUROS (EUR 50) IN
+TOTAL.
+
+
+8. JURY TRIAL WAIVER
+
+EVEN IF TRIAL BY JURY MAY BE ADOPTED UNDER THE APPLICABLE LAW, THE
+PARTIES HERETO WAIVE TRIAL BY JURY WITH RESPECT TO ANY MATTERS ARISING
+UNDER OR RELATING TO THIS EULA TO THE MAXIMUM EXTENT AS PERMITTED
+UNDER THE APPLICABLE LAW.
+
+
+9. HAZARDOUS USES
+
+The Software is not designed and/or intended for use in connection
+with any application requiring fail-safe performance such as the
+operation of nuclear power facilities, air traffic control or
+navigation systems, weapon control systems, life support systems, or
+any other system whose failure could lead to death, personal injury,
+or severe physical or environmental damage.  You agree that MVTec will
+have no responsibility of any nature, and you are solely responsible
+for any expense, loss, injury or damage incurred as a result of such
+use of the Software.
+
+
+10. ENTIRE AGREEMENT/SEVERABILITY
+
+This Agreement contains the entire, final and exclusive understanding
+between MVTec and you, and may not be modified or amended except by
+written instrument, executed by authorized representatives of MVTec
+and you.  If any provisions of this license is held to be illegal,
+invalid or enforceable for any reason, then such provision will be
+enforced to the maximum extent permissible and the remainder of the
+provisions of this license will remain in full force and effect.
+
+
+11. APPLICABLE LAW
+
+This Software License Agreement is governed by the laws of Germany.
+
+

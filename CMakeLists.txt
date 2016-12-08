@@ -1,0 +1,34 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(asr_halcon_bridge)
+
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+
+find_package(Halcon REQUIRED)
+
+find_package(catkin REQUIRED COMPONENTS
+	roscpp
+	sensor_msgs
+)
+
+catkin_package(
+	CATKIN_DEPENDS roscpp sensor_msgs
+	LIBRARIES ${PROJECT_NAME}
+	INCLUDE_DIRS include ${Halcon_INCLUDE_DIRS} ${Halcon_INCLUDE_DIRS}/halconcpp
+)
+
+include_directories(
+	include
+	${Halcon_INCLUDE_DIRS}
+	${Halcon_INCLUDE_DIRS}/halconcpp
+	${catkin_INCLUDE_DIRS}
+)
+
+add_library(${PROJECT_NAME}
+	src/halcon_image.cpp
+	src/halcon_pointcloud.cpp
+)
+
+target_link_libraries(${PROJECT_NAME}
+	${CATKIN_LIBRARIES}
+	${Halcon_LIBRARIES}
+)
