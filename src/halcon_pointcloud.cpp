@@ -141,7 +141,7 @@ namespace halcon_bridge {
             interleavedPoints = new float[ros_pointcloud.width * 3];
         }
 
-        for (int i = 0; i < ros_pointcloud.width; i++) {
+        for (size_t i = 0; i < ros_pointcloud.width; i++) {
             interleavedPoints[i * 3] = (float)x_values[i];
             interleavedPoints[i * 3 + 1] = (float)y_values[i];
             interleavedPoints[i * 3 + 2] = (float)z_values[i];
@@ -179,46 +179,34 @@ namespace halcon_bridge {
 
         int offset_x, offset_y, offset_z, offset_x_normal, offset_y_normal, offset_z_normal, offset_curvature;
         offset_x = offset_y = offset_z = offset_x_normal = offset_y_normal = offset_z_normal = offset_curvature = 0;
-        int size_x, size_y, size_z, size_x_normal, size_y_normal, size_z_normal, size_curvature;
-        size_x = size_y = size_z = size_x_normal = size_y_normal = size_z_normal = size_curvature = 0;
-        int count_x, count_y, count_z, count_x_normal, count_y_normal, count_z_normal, count_curvature;
-        count_x = count_y = count_z = count_x_normal = count_y_normal = count_z_normal = count_curvature = 0;
+        int count_x_normal, count_y_normal, count_z_normal, count_curvature;
+        count_x_normal = count_y_normal = count_z_normal = count_curvature = 0;
 
         for (unsigned int i = 0; i < source.fields.size(); i++) {
             sensor_msgs::PointField field = source.fields[i];
             if (field.name == "x") {
                 offset_x = field.offset;
-                size_x = getSizeFromDatatype(field.datatype);
-                count_x = field.count;
             }
             if (field.name == "y") {
                 offset_y = field.offset;
-                size_y = getSizeFromDatatype(field.datatype);
-                count_y = field.count;
             }
             if (field.name == "z") {
                 offset_z = field.offset;
-                size_z = getSizeFromDatatype(field.datatype);
-                count_z = field.count;
             }
             if (field.name == "normal_x") {
                 offset_x_normal = field.offset;
-                size_x_normal = getSizeFromDatatype(field.datatype);
                 count_x_normal = field.count;
             }
             if (field.name == "normal_y") {
                 offset_y_normal = field.offset;
-                size_y_normal = getSizeFromDatatype(field.datatype);
                 count_y_normal = field.count;
             }
             if (field.name == "normal_z") {
                 offset_z_normal = field.offset;
-                size_z_normal = getSizeFromDatatype(field.datatype);
                 count_z_normal = field.count;
             }
             if (field.name == "curvature") {
                 offset_curvature = field.offset;
-                size_curvature = getSizeFromDatatype(field.datatype);
                 count_curvature = field.count;
             }
 

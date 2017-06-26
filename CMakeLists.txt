@@ -13,13 +13,13 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 	CATKIN_DEPENDS roscpp sensor_msgs
 	LIBRARIES ${PROJECT_NAME}
-	INCLUDE_DIRS include ${Halcon_INCLUDE_DIRS} ${Halcon_INCLUDE_DIRS}/halconcpp
+        INCLUDE_DIRS include
+        DEPENDS Halcon
 )
 
 include_directories(
 	include
 	${Halcon_INCLUDE_DIRS}
-	${Halcon_INCLUDE_DIRS}/halconcpp
 	${catkin_INCLUDE_DIRS}
 )
 
