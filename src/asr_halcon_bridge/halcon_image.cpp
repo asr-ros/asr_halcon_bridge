@@ -15,7 +15,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 */
 
-#include <halcon_image.h>
+#include <asr_halcon_bridge/halcon_image.h>
 #include <sensor_msgs/image_encodings.h>
 #include <boost/make_shared.hpp>
 

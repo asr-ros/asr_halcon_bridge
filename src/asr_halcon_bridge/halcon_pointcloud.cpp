@@ -15,7 +15,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 */
 
-#include <halcon_pointcloud.h>
+#include <asr_halcon_bridge/halcon_pointcloud.h>
 #include <boost/make_shared.hpp>
 
 #include <sensor_msgs/PointCloud2.h>
