@@ -24,11 +24,21 @@ include_directories(
 )
 
 add_library(${PROJECT_NAME}
-	src/halcon_image.cpp
-	src/halcon_pointcloud.cpp
+    src/${PROJECT_NAME}/halcon_image.cpp
+    src/${PROJECT_NAME}/halcon_pointcloud.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
 	${CATKIN_LIBRARIES}
 	${Halcon_LIBRARIES}
+)
+
+install(TARGETS ${PROJECT_NAME}
+    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(DIRECTORY include/${PROJECT_NAME}/
+    DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
