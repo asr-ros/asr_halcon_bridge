@@ -3,7 +3,11 @@ project(asr_halcon_bridge)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(Halcon REQUIRED)
+find_package(Halcon)
+if(NOT ${Halcon_FOUND})
+   message(WARNING  "Skip processing ${PROJECT_NAME}, because HALCON library is missing!!! (see http://wiki.ros.org/asr_halcon_bridge)")
+   return()
+endif()
 
 find_package(catkin REQUIRED COMPONENTS
 	roscpp
