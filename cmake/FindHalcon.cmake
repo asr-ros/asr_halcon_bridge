@@ -1,13 +1,56 @@
-find_path(HALCON_INCLUDE_DIR NAMES Halcon.h HINTS $ENV{HALCONROOT}/include)
-find_library(HALCON_LIBRARY NAMES halcon HINTS $ENV{HALCONROOT}/lib/$ENV{HALCONARCH})
-find_library(HALCONCPP_LIBRARY NAMES halconcpp HINTS $ENV{HALCONROOT}/lib/$ENV{HALCONARCH})
-
-set(Halcon_LIBRARIES ${HALCON_LIBRARY} ${HALCONCPP_LIBRARY})
-set(Halcon_INCLUDE_DIRS ${HALCON_INCLUDE_DIR} ${HALCON_INCLUDE_DIR}/halconcpp)
-
 include(FindPackageHandleStandardArgs)
 
-find_package_handle_standard_args(Halcon DEFAULT_MSG
-                                  Halcon_LIBRARIES Halcon_INCLUDE_DIRS)
+find_path (Halcon_INCLUDE_DIR halconcpp/HalconCpp.h
+  PATHS
+  $ENV{HALCON_ROOT}/include
+  /usr/local/include
+  /usr/include
+  /sw/include
+  /opt/halcon/include
+)
 
-mark_as_advanced(Halcon_INCLUDE_DIRS Halcon_LIBRARIES)
+find_library (Halcon_ENGINE_LIBRARY hdevenginecpp
+  PATHS
+  $ENV{HALCON_ROOT}/lib/x64-linux
+  /usr/local/lib/x64-linux
+  /usr/lib/x64-linux
+  /lib/x64-linux
+  /sw/lib/x64-linux
+  /opt/halcon/lib/x64-linux
+)
+
+find_library (Halcon_CPP_LIBRARY halconcpp
+  PATHS
+  $ENV{HALCON_ROOT}/lib/x64-linux
+  /usr/local/lib/x64-linux
+  /usr/lib/x64-linux
+  /lib/x64-linux
+  /sw/lib/x64-linux
+  /opt/halcon/lib/x64-linux
+)
+
+find_library (Halcon_LIBRARY halcon
+  PATHS
+  $ENV{HALCON_ROOT}/lib/x64-linux
+  /usr/local/lib/x64-linux
+  /usr/lib/x64-linux
+  /lib/x64-linux
+  /sw/lib/x64-linux
+  /opt/halcon/lib/x64-linux
+)
+
+
+find_package_handle_standard_args(Halcon
+  DEFAULT_MSG
+  Halcon_INCLUDE_DIR
+  Halcon_LIBRARY
+)
+
+if(Halcon_FOUND)
+  set(Halcon_LIBRARIES ${Halcon_LIBRARY} ${Halcon_ENGINE_LIBRARY} ${Halcon_CPP_LIBRARY})
+  set(Halcon_INCLUDE_DIRS ${Halcon_INCLUDE_DIR})
+endif()
+
+mark_as_advanced(Halcon_INCLUDE_DIRS
+  Halcon_LIBRARIES
+  )
