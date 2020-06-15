@@ -16,7 +16,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 
 #include <sensor_msgs/Image.h>
-#include <HalconCpp.h>
+#include <halconcpp/HalconCpp.h>
 #include <stdexcept>
 
 namespace halcon_bridge {
