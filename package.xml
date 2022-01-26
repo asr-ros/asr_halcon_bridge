@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<package>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>asr_halcon_bridge</name>
   <version>1.0.0</version>
   <description>This package is used to convert between image-messages of the ROS environment and HALCON-images.</description>
@@ -7,14 +8,10 @@
   <maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
   <license>BSD</license>
   <url type="website">http://ros.org/wiki/asr_halcon_bridge</url>
-  
-  <buildtool_depend>catkin</buildtool_depend>  
-  <build_depend>roscpp</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  
-  <run_depend>roscpp</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-  
+  <buildtool_depend>ament_cmake</buildtool_depend>  
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
-
-
